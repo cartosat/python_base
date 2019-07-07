@@ -22,7 +22,7 @@ p=0
 for d in vals:
 
     if d==s:
-        print("key is found at",p+1)
+        print("key is found at:-",p+1)
         break
     p+=1
 

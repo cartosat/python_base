@@ -10,4 +10,4 @@ if i<=av:
         j+=1
 
 else:
-    print("candy not available")
+    print("no candy available")
