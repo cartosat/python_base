@@ -1,0 +1,258 @@
+Data Structures:- 
+
+							   |
+		-------------------------------------------------
+	    |											  	|
+	 Linear										  	Non-Linear
+		|												|
+	-------------------------					-------------------------
+	|						|					|						|
+Static Data			  Non Static Data	       Tree					  Graph
+ Structure				Structures
+    |						|
+  Array		 -------------------------------
+			 |				|			   |
+		Linked List		  Stack 		Queue
+
+
+
+** Some basic data types are copied from python.txt file, You can read or ignore
+
+Python DataTypes
+- Numeric
+	- Python support three types of numeric data types.
+		- Integer - Python has no restriction on the length of an integer.
+		- float
+		- Complex Number
+
+- Sequence Type
+	- The concatenation operator (+) and repetition operator (*) works with the Sequences
+		1) String - String is the collection of the characters surrounded by single quotes
+					double quotes, or triple quotes.
+				  - Strings are immutable in python.
+				  - String can completely replaced by other but we cannot partially
+						reassign its content.
+				  - We can format string using `"hi {}".format("Vaibhav")`,
+					 "Hello {variable_name}" and "hi %s"%("Vaibhav)
+
+		2) List - The lists are ordered collection of elements of different data types.
+				- List elements can be accessed by the assigned index.
+				- 
+
+		3) Tuple - A tuple is a read-only data structure as we can't modify the size 
+					and value of the items of a tuple.
+				- Tuple can have duplicate values.
+				- It is immutable and and ordered data structure
+				- It is similar to list.
+				- We can create tuple without using parentheses.
+				- We need to add comma after 1st element to create single element tuple
+				 	single_tuple = ("Tuple",)
+				- We cannot delete single element of tuple but we can delete it completely
+
+	Difference between list and tuple
+		- list is mutable whereas tuple is not.
+		- List is better for performing operations like insertion and deletion
+		- Tuple is better for accessing elements.
+		- list consumes more memory, Tuple consumes less memory.
+
+	Difference between list and set
+		- list is order collection of datatype, where is set is unordered.
+		- list can have duplicate, set cannot have duplicate elements.
+		- 
+
+- Dictionary - Dictionary is an unordered set of a key-value pair of items. 
+			 - While fetching key-value from dict, we may not get data in 
+				same order which we have inserted.
+			 - It is like hash tables in any other language with the 
+				time complexity of O(1).
+			 - We cannot have duplicate key, But we can have duplicate value.
+			 - The keys are immutable in dictionary.
+			 - Python has built in function dict() to create dictionary.
+				or we can use {}.
+			 - values from dictionary can be accessed by keys or we have get()
+				method to do so.
+			 -  Items of the dictionary can be deleted by using the del keyword.
+			 - pop() method accepts the key as an argument and remove the 
+				associated value.
+			 -  popitem() and clear() method for remove elements from the dictionary.
+			 - we cannot store multiple values for the same keys.
+
+- Set -   Python Set is the unordered collection of the data type.
+		- It has unique elements.
+		- Set is mutable but its elements are immutable.
+		- It will not have duplicate values.
+		- There is no index attached to the elements of the set.
+		- In set, the order of the elements is undefined;
+		- We can use set for week days.
+		- We need to use set() function to create empty set.
+			empty curly braces creates empty dictionary.
+		- remove method throws error if element is not found whereas discard will not.
+		- print(Days1|Days2) is union operator or we have union() method.
+		- and & for intersection or intersection() function.
+
+
+		FrozenSets
+			- It is the immutable form of the normal sets.
+			- Since elements are immutable  they can be used as a key in the dictionary.
+			- frozenset() method is used to create the frozenset object.
+			- If we pass the dictionary as the sequence inside the frozenset() method,
+			   it will take only the keys from the dictionary and returns a frozenset
+
+- Boolean
+	- & is bitwise AND.
+	- AND is logical AND.
+
+	- 0 is treated as False and
+	- 1 is treated as True in python. --> 1==True is True.
+	- True+10 is 11 since True is 1.
+
+- Above are common built-in data types in Python.
+
+Python Data Structures
+- Python provides built-in data structures such as list, tuple,
+	dictionary, and set.
+
+Mutable :- List, Set, Dictionary
+Immutable :- integer, string, float, tuple, and bool.
+
+- mutable means it can be modified after its creation.
+- immutable --> assigned value cannot be changed.
+
+Above are basic data strucures in python
+
+Data Structures
+	- Data Structures are a way of organizing data so that it can be accessed more 
+		efficiently.
+	- We have collection module in python which has many differenet data structures.
+
+	A) Linear data structure:
+		- Data structure in which data elements are arranged sequentially or linearly,
+			where each element is attached to its previous and next adjacent elements,
+			is called a linear data structure. 
+		- Examples of linear data structures are array, stack, queue, linked list, etc.
+
+		1) Static data structure:
+			- Static data structure has a fixed memory size.
+			- It is easier to access the elements in a static data structure.
+			- An example of this data structure is an array.
+		2) Dynamic data structure: 
+			- In dynamic data structure, the size is not fixed.
+			- It can be randomly updated during the runtime which may be considered
+				efficient concerning the memory (space) complexity of the code.
+			- Examples of this data structure are queue, stack, linked list, etc.
+
+	B) Non-linear data structure:
+		- Data structures where data elements are not placed sequentially or linearly are
+			called non-linear data structures.
+		- In a non-linear data structure, we can’t traverse all the elements in a single
+			run only.
+		- Examples of non-linear data structures are trees and graphs.
+
+Collections Module
+- It was introduced to improve the functionality of the built-in datatypes.
+
+1) Counters :-
+	- A counter is a sub-class of the dictionary. 
+	- It is used to keep the count of the elements in an iterable.
+	- i.e it counts number of occurences of particular element.
+	- e.g s1 = ['B','B','A','B','C','A','B', 'B','A','C'] -> print(Counter(s1))
+			----> Counter({'B': 5, 'A': 3, 'C': 2})
+	- key represents the element in the iterable and value represents
+		the count of that element in the iterable.
+	- We can also pass in dictionary or keyword argument.
+	- e.g Counter({'A':3, 'B':5, 'C':2}) or Counter(A=3, B=5, C=2)
+
+2) OrderedDict :-
+	- An OrderedDict is also a sub-class of dictionary.
+	- Dictionary does not remembers the order in which the keys were inserted.
+	- OrderedDict remembers the order in which the keys were inserted.
+	- Syntax to declare OrderedDict is od1 = OrderedDict({'B': 5, 'A': 3, 'C': 2})
+	- or we can define empty dict n then add elements. od = OrderedDict() --> od['a']=1
+	- When some element is delted and reinserted then that will be added to end of
+		dictionary to maintain order.
+
+3) DefaultDict :-
+	- A DefaultDict is also a sub-class to dictionary.
+	- It is used to provide some default values for the key that does not exist
+		and never raises a KeyError.
+	- default_factory is a function that provides default value for dictionary created.
+	- If this parameter is absent then the KeyError is raised.
+	- Syntax :- 
+			a) We need to declare Deafult dict with d = defaultdict(int)
+			b) Now we can add any integer element or list, using for loop.
+				e.g we have 
+						d = defaultdict(int)
+						L = [1, 2, 3, 4, 2, 4, 1, 2]
+						for i in L:
+    						d[i] += 1
+
+						print(d) --> defaultdict(int, {1: 2, 2: 3, 3: 1, 4: 2})
+			c) Output is same as when we provide list to counter.
+
+4) ChainMap :-
+	- A ChainMap encapsulates many dictionaries into a single unit and returns
+		a list of dictionaries.
+	- A new dictionary can be added by using the new_child() method.
+	- The newly added dictionary is added at the beginning of the ChainMap.
+	- ChainMap({'a': 1, 'b': 2}, {'a': 3, 'd': 4}, {'e': 5, 'f': 6})
+	- When you access a duplicate key, such as "a",
+		the chain map only returns the first occurrence of that key. i.e 1
+	- ChainMap also supports mutations.
+
+
+5) Linked List :-
+	- A linked list is a linear data structure.
+	- Elements are not stored at contiguous memory locations.
+	- The elements in a linked list are linked using pointers
+	- Each node in a list consists of at least two parts:
+		a) Data
+		b) Pointer (Or Reference) to the next node
+	-  If the linked list is empty, then the value of the head is NULL.
+
+	- Types of Linked List
+		a) Singly Linked List
+			- we can only traverse in one direction.
+			- Every node has pointer to next node only, not previous node.
+		b) Doubly Linked List
+			- we can traverse in both directions
+			- Every node has pointer to next and previous node.
+		c) Circular Linked List
+			- Last node had pointer to first node.
+
+6) Stack :-
+	- A stack is a linear data structure that stores items in a LIFO or FILO.
+	- Element is added and removed from same end only.
+	- The insert and delete operations are often called push and pop.
+	- The functions associated with stack are:
+		- empty() -->  Returns whether the stack is empty.
+		- size() –-> Returns the size of the stack.
+		- top() –-> Returns a reference to the topmost element of the stack.
+		- push(a) –-> Inserts the element ‘a’ at the top of the stack.
+		- pop() –-> Deletes the topmost element of the stack.
+	- All operations are of Time Complexity O(1).
+
+7) Queue :- 
+	- Queue is also a linear data structure, that stores items in a 
+		First In First Out (FIFO) manner.
+	- With a queue, the least recently added item is removed first.
+	- import queue model has PriorityQueue, Queue, deque, SimpleQueue.
+	- Operations associated with queue are:
+		- Enqueue: 
+			- Adds an item to the queue.
+			- If the queue is full, then it is said to be an Overflow condition.
+		- Dequeue:
+			- Removes an item from the queue.
+			- The items are popped in the same order in which they are pushed.
+			- If the queue is empty, then it is said to be an Underflow condition.
+		- Front:
+			- Get the front item from queue.
+		- Rear:
+			- Get the last item from queue.
+	- All operations are of Time Complexity O(1).
+
+8) Priority Queue :-
+	- Priority Queue is an extension of the queue with the following properties.
+		- An element with high priority is dequeued before an element with low priority.
+		- If two elements have the same priority, they are served according to their
+			order in the queue.
+	- import queue model has PriorityQueue, Queue, deque, SimpleQueue.

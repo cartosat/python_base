@@ -1,0 +1,83 @@
+OOP
+- It comprises of different concept like :-
+	- Object
+	- Class
+	- Inheritance
+	- Polymorphism
+	- Abstraction
+	- Encapsulation
+
+- Apart from these there are some other concepts as well like:-
+	Coupling, Cohesion, Association, Aggregation, Composition.
+
+1) Object :-
+	- Object is any real world entity that has state and behavior.
+		e.g. can be Pen, table, Keyboard.
+
+	- Object is instance of class.
+	- Object contains address that occupies space in memory.
+
+2) Class :-
+	- Class is prototype or template which hold variables and functions
+		of similar kind of multiple objects.
+	- Class is blueprint with which we can create objects.
+	- Class does not consume space.
+
+3) Inheritance
+	- Inheritance is when one class aquires all properties of another
+		class.
+	- We have child class which is inheriting parent class,
+	  So by using object of child class we can call or access methods
+	  and variables of parent class. This phenomenon is inheritance.
+	- Inheritance provide code reusability. e.g Let consider Animal,
+		So each animal eat, walk... so We have Dog which is also Animal
+		Dog can also eat and walk. So here we can have all common
+		behavior in parent class and then reuse for all child classes.
+	
+	- We have different types of inheritances as follow:-
+			Type			Supported in java	Supported in Python
+		- Single				Yes					Yes
+		- Multi-level			Yes					Yes
+		- Multiple				No					Yes
+		- Hierarchial			Yes					Yes
+		- Hybrid				No					Yes	
+
+	- In java, multiple and hybrid inheritance is supported through 
+		interface only.
+
+4) Polymorphism --> Method overloading and Overriding.
+	-  Polymorphism can be defined as the ability of an object to take 
+		many forms.
+	- This helps us perform the same action in different ways.
+	- Polymorphism is of 2 types:-
+		a) Compile-time (method overloading)
+			- Overloading is when we have same method with different
+				number of parameters or signature in same class.
+			- Python does not support method overloading or compile-time polymorphism.
+				- When the runtime encounters another function with the same name it
+				updates the entry in the local namespace and thus removes the possibility
+				of two functions co-existing. Hence python does not support Function 
+				overloading.
+		b) Runtime-time (Method Overriding)
+			- It is also known as Dynamic Method Dispatch.
+			- In method overriding we have two method with same name
+				and parameter in different classes.
+
+5) Abstraction --> Abstract Classes or interfaces.
+	- Abstraction is the process of hiding certain details and 
+		showing only essential information to the user.
+	- Abstraction can be achieved with either abstract classes 
+		or interfaces.
+	- we cannot create object of abstract class.
+	- Abstract method: can only be used in an abstract class.
+	- It does not have a body. The body is provided by the 
+		subclass (inherited from).
+
+6) Encapsulation --> Getter Setter
+	- Encapsulation is defined as the wrapping up of data under
+		a single unit.
+	- It is shield that prevents the data from being accessed by
+		the code outside this shield.
+	- We achieve this by getters and setters in java.
+	- In encapsulation, the data in a class is hidden 
+		by making the members or methods of a class private.

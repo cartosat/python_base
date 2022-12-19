@@ -1,5 +1,0 @@
-interpreter setup
-
-
-python             C:\Users\VSW\AppData\Local\Programs\Python\Python37\
-python-3.8   C:\Program Files\Python38\python.exe

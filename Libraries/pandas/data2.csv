@@ -1,0 +1,18 @@
+,activity,borrower_genders,country,country_code,currency_policy,distribution_model,lender_count,loan_amount,original_language,repayment_interval,sector,status,term_in_months,rMPI
+0,Home Appliances,group,Cambodia,KH,shared,field_partner,5,125,English,monthly,Personal Use,funded,8,0.097
+1,Cereals,female,Philippines,PH,shared,field_partner,5,125,English,irregular,Food,funded,14,0.055
+2,Clothing Sales,,Peru,PE,shared,field_partner,10,375,Spanish,monthly,Clothing,funded,8,0
+3,Clothing Sales,female,Tajikistan,TJ,?,field_partner,27,850,English,monthly,Clothing,funded,14,0.021
+4,Fish Selling,female,Uganda,UG,,field_partner,17,550,English,irregular,Food,funded,9,0.417
+5,Personal Products Sales,female,Jordan,JO,shared,field_partner,22,575,English,monthly,Retail,funded,15,0.005
+6,Transportation,male,Tajikistan,TJ,NA,field_partner,38,1125,English,irregular,Transportation,funded,6,0.033
+7,Home Appliances,group,Cambodia,KH,shared,field_partner,4,100,English,monthly,Personal Use,funded,8,0.12
+8,Bakery,male,Nicaragua,NI,shared,field_partner,17,1400,Spanish,monthly,Food,not_funded,20,0.161
+9,Farming,male,Nigeria,NG,??,field_partner,19,600,English,bullet,Agriculture,funded,19,0.311
+10,Primary/secondary school costs,female,Colombia,CO,not shared,field_partner,12,325,Spanish,irregular,Education,funded,7,0.009
+11,Construction Supplies,female,Nicaragua,NI,,field_partner,14,400,Spanish,monthly,Construction,funded,15,0.112
+12,Retail,female,Colombia,CO,not shared,field_partner,40,1025,Spanish,monthly,Retail,funded,17,0.009
+13,Personal Products Sales,female,Philippines,PH,#,field_partner,17,450,English,irregular,Retail,funded,8,0.422
+14,Cosmetics Sales,female,Ecuador,EC,not shared,field_partner,26,1650,Spanish,irregular,Retail,funded,8,0.054
+15,Higher education costs,female,Colombia,CO,,field_partner,9,225,Spanish,monthly,Education,funded,4,0.583
+16,General Store,male,Honduras,HN,shared,field_partner,29,775,Spanish,monthly,Retail,funded,1 Year,0.112

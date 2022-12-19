@@ -1,0 +1,394 @@
+https://github.com/learning-zone/python-interview-questions
+https://www.youtube.com/watch?v=BkHdmAhapws
+https://www.scaler.com/topics/python/types-of-function-arguments-in-python/
+
+Dynamically typed and Statically typed language.
+Dynamically-typed languages perform type checking at runtime, while statically typed
+	languages perform type checking at compile time. This means that scripts written
+	in dynamically-typed languages (like Groovy) can compile even if they contain
+	errors that will prevent the script from running properly (if at all).
+	If a script written in a statically-typed language (such as Java) contains errors,
+	it will fail to compile until the errors have been fixed.
+
+First class function :-
+	A programming language is said to have First-class functions when functions in that 
+		language are treated like any other variable. For example, in such a language, 
+		a function can be passed as an argument to other functions, can be returned by
+		another function and can be assigned as a value to a variable.
+	- Python has first class functions.
+
+
+Python
+- Python is Interpreted language it executes the code line by line and
+	stops if an error occurs in any line.
+- Python is dynamically typed that mean developer does not assign data types
+	at the time of coding. It automatically gets assigned during execution.
+- Python is case sensative language.
+
+- Features:-
+	- Easy to use.
+	- Free and open-source
+	- Extensive support for libraries
+
+What is PEP 8?
+- PEP 8 stands for Python Enhancement Proposal.
+- It is document that helps us to provide the guidelines on how to write the Python code.
+- It is set of rules that specify how to format Python code for maximum readability.
+
+
+- How python program is executed :-
+	- We save code in .py file
+	- Compilation :-
+		- Python compiler verifies synxtax and generate byte code(.pyc file)
+			 if syntax is okay.
+		- Byte code are intermediate instructions. Hence no OS can
+			understand this.	
+	- Linking
+		-  python interpreter i.e Python Virtual Machine(PVM) converts the
+			python byte code into machine-executable code.
+
+	- Python programs are both compiled as well as interpreted, but the	
+		compilation part is hidden from the programmer. Therefore, we generally say, 
+		Python is an interpreted language for the same reason.
+
+Difference between python2 and python3
+
+- we have print as statement in py2 and print() as function in py3.
+- Python 3 doesn't contain the xrange() function of Python 2.
+- We have raw_input() in py2 and input() in py3 for user input.
+
+Difference between python and java
+- Python is very easy and have less lines of code.
+- We dont need any method and class to write simple python program.
+- We dont have curly bracket insted we use indentation in py.
+- Python was invented by Guido van Rossum in 1991.
+
+
+Where is Python used?
+- Data Science
+- Machine Learning and AI
+- Web Applications flask, django
+- Computer Vision or Image Processing Applications.
+- Speech Recognitions
+
+Python Popular Frameworks and Libraries
+- Web development (Server-side) - Django Flask, Pyramid, CherryPy
+- GUIs based applications - Tk, PyGTK, PyQt, PyJs, etc.
+- Machine Learning - TensorFlow, PyTorch, Scikit-learn, Scipy, etc.
+- Mathematics - Numpy, Pandas, etc.
+
+In python single quotes are used for regular expressions, dict keys
+or SQL where as double quotes are used for string representation.
+
+What is the difference between .py and .pyc files?
+
+What is suit in python :-
+	- Group of statement which are inside certain block.
+	- Number of statements inside for block can be called suite.
+
+What are different types of function:-
+	1) Required Arguments :-
+		- We need to pass argument in same order
+		- here `add(num1, num2=12):` num1 is required argument.
+	2) Keyword Arguments :-
+		- We need to pass argument with keywords.
+		- here `add(num1, num2=12):` num1 anf num2 are keywords.
+	3) Default Agruments :-
+		- We need to assign default value certain argument.
+		- Non-default arguments are specified before the default arguments.
+		- The default arguments are specified at the end
+		- here `add(num1, num2=12):` num2 is default argument.
+	4) Arbitrary/Variable Arguments :-
+		- We can pass any number of argument and access them with for loop inside func.
+		- We use *args and **kwrgs for this functions.
+
+Tokens in python :-
+	There are following tokens in Python:
+		1) Keywords.
+		2) Identifiers.
+		3) Literals.
+		4) Operators.
+
+Python Keywords :-
+- 1. global keyword is used to declare global variables inside function.
+		- When variables are declared inside function they are local variables
+		- And those in file scope are global variables, which means they can be
+			accessed anywhere.
+
+- 2. del keyword is used to delete the declared variables.
+		- If we access variable after deleting we get `name not defined error`.
+		- Syntax is del <variable>
+
+- 3.  self is used to represent the instance of the class.
+		- We can access the attributes and methods of the class with self Keyword.
+
+- Difference between Break, Continue, Pass
+	- a) break - It terminates the loop immediately and the control flows to the 
+					statement after the body of the loop.
+	- b) continue - It terminates the current iteration of the statement, skips the 
+					rest of the code in the current iteration and the control flows
+					to the next iteration of the loop.
+	- c) pass - It  is generally used to fill up empty blocks and is similar to an 
+				empty statement represented by a semi-colon in languages such as Java
+
+Python DataTypes
+- Numeric
+	- Python support three types of numeric data types.
+		- Integer - Python has no restriction on the length of an integer.
+		- float
+		- Complex Number
+
+- Sequence Type
+	- The concatenation operator (+) and repetition operator (*) works with the Sequences
+		1) String - String is the collection of the characters surrounded by single quotes
+					double quotes, or triple quotes.
+				  - Strings are immutable in python.
+				  - String can completely replaced by other but we cannot partially
+						reassign its content.
+				  - We can format string using `"hi {}".format("Vaibhav")`,
+					 "Hello {variable_name}" and "hi %s"%("Vaibhav)
+
+		2) List - The lists are ordered collection of elements of different data types.
+				- List elements can be accessed by the assigned index.
+				- 
+
+		3) Tuple - A tuple is a read-only data structure as we can't modify the size 
+					and value of the items of a tuple.
+				- Tuple can have duplicate values.
+				- It is immutable and and ordered data structure
+				- It is similar to list.
+				- We can create tuple without using parentheses.
+				- We need to add comma after 1st element to create single element tuple
+				 	single_tuple = ("Tuple",)
+				- We cannot delete single element of tuple but we can delete it completely
+
+	Difference between list and tuple
+		- list is mutable whereas tuple is not.
+		- List is better for performing operations like insertion and deletion
+		- Tuple is better for accessing elements.
+		- list consumes more memory, Tuple consumes less memory.
+
+	Difference between list and set
+		- list is order collection of datatype, where is set is unordered.
+		- list can have duplicate, set cannot have duplicate elements.
+		- 
+
+- Dictionary - Dictionary is an unordered set of a key-value pair of items. 
+			 - While fetching key-value from dict, we may not get data in 
+				same order which we have inserted.
+			 - We cannot have duplicate key, But we can have duplicate value.
+			 - The keys are immutable in dictionary.
+			 - Python has built in function dict() to create dictionary.
+				or we can use {}.
+			 - values from dictionary can be accessed by keys or we have get()
+				method to do so.
+			 -  Items of the dictionary can be deleted by using the del keyword.
+			 - pop() method accepts the key as an argument and remove the 
+				associated value.
+			 -  popitem() and clear() method for remove elements from the dictionary.
+			 - we cannot store multiple values for the same keys.
+
+- Set -   Python Set is the unordered collection of the data type.
+		- It has unique elements.
+		- Set is mutable but its elements are immutable.
+		- It will not have duplicate values.
+		- There is no index attached to the elements of the set.
+		- In set, the order of the elements is undefined;
+		- We can use set for week days.
+		- We need to use set() function to create empty set.
+			empty curly braces creates empty dictionary.
+		- remove method throws error if element is not found whereas discard will not.
+		- print(Days1|Days2) is union operator or we have union() method.
+		- and & for intersection or intersection() function.
+
+
+		FrozenSets
+			- It is the immutable form of the normal sets.
+			- Since elements are immutable  they can be used as a key in the dictionary.
+			- frozenset() method is used to create the frozenset object.
+			- If we pass the dictionary as the sequence inside the frozenset() method,
+			   it will take only the keys from the dictionary and returns a frozenset
+
+- Boolean
+	- & is bitwise AND.
+	- AND is logical AND.
+
+	- 0 is treated as False and
+	- 1 is treated as True in python. --> 1==True is True.
+	- True+10 is 11 since True is 1.
+
+- Above are common built-in data types in Python.
+
+Python Data Structures
+- Python provides built-in data structures such as list, tuple,
+	dictionary, and set.
+
+Mutable :- List, Set, Dictionary
+Immutable :- integer, string, float, tuple, and bool.
+
+- mutable means it can be modified after its creation.
+- immutable --> assigned value cannot be changed.
+
+Python Literals
+	- Literals can be defined as data that is given in a variable or constant.
+	- Types of Strings:
+			- Single-line String - terminated in single line.
+			- Multi-line String - text that is written in multiple lines
+				e.g text1='hello\    
+							user' 
+				- We use \ to write multi-line string.
+				- we can use triple quotes to write multiline comment.
+
+	- Python contains one special literal i.e., None.   
+
+- in and not in are membership operators in python.
+- is and not is are identity operators.
+
+
+Why Python string is immutable?
+- In Python, strings are made immutable so that programmers cannot
+	alter the contents of the object (even by mistake).
+	This avoids unnecessary bugs.
+
+- Security - database username, password are passed as String to get
+	database connection and in socket programming host and port details
+	passed as String. Since String is immutable, its value can’t be
+	changed otherwise any hacker could change the referenced value to
+	cause security issues in the application.
+
+Python is and ==
+	- In python is is used for reference comparison where as == is used for
+		value comparison.
+	- In java == is used for reference comparison whereas equals is used for
+		value comparison.
+
+- We can use `in` keyword on any data type with the __contains__() method.
+
+
+Anonymous Functions/lambda functions
+	- Functions are called anonymous because we do not declare them.
+	- We can use the lambda keyword to define these functions.
+	- lambda functions accepts unlimited number of arguments; but returns
+		only one value.
+	-  an anonymous function cannot be directly called to print.
+
+
+Python Magic/Dunder Methods
+- Magic methods are those which have two underscore as prefix and suffix.
+- e.g. __init__, __add__, __repr__
+- __init__ is a contructor method in Python and is automatically called
+	to allocate memory when a new object/instance is created.
+
+Python Iterator
+- It is object that can be used to iterate over iterables like list,tuple,dict.
+- It has two methods __iter__() and __next__()
+-  We use __next__() method to print value from generator
+
+Python Generators
+- Generators are same as function but insted of return we use yeild in generators.
+- We can have multiple yeild inside function.
+
+Python Decorators
+- With decorators we can add extra feature in existing function.
+- Decorators allows us to wrap another function to extend behaviour of wrapped function
+	without permanently modifying it.
+- Function are first class objects in python that mean they can be assigned to variables,
+	returned from other functions and passed into functions.
+- Classes are also first class objects.
+- We can pass function as parameter and return function as well.
+
+Shallow and Deep Copy
+- Shallow Copy stores the copy of the original object and points the 
+	references to the objects.
+- Deep copy stores the copy of the original object and recursively 
+	copies the objects as well.
+- In shallow copy changes made to the new/copied object are reflected
+	in the original object.
+- Deep copy doesn’t reflect changes made to the new/copied object 
+	in the original object.
+
+
+Object Serialization and Deserialization or Pickling and Unpickling
+- It is process of converting state of an object into byte stream.
+- This byte stream can further be stored in any file or It can also be transmitted via sockets.
+- Deserialization is the process of reconstructing the object from the byte stream.
+- In python we have pickle module.
+
+
+Difference between Python Arrays and lists?
+- Arrays
+	- Arrays in python can only contain elements of same data types.
+	-  It is a wrapper around C language arrays and consumes far less memory than lists.
+- Lists
+	- Lists in python can contain elements of different data types.
+	- It has the disadvantage of consuming large memory.
+
+
+How is memory managed in Python?
+- Memory management in Python is handled by the Python Memory Manager.
+- The memory allocated by the manager is in form of a private heap space
+	dedicated to Python.
+- All Python objects are stored in this heap and being private, 
+	it is inaccessible to the programmer.
+- Python has an in-built garbage collection to recycle the unused memory
+	for the private heap space.
+
+What is Scope Resolution in Python?
+- Sometimes objects within the same scope have the same name but function differently.
+- In such cases, scope resolution comes into play
+- Python automatically handles this.
+
+What does *args and **kwargs mean?
+- *args 
+	- It is a special syntax used in the function definition to pass
+		variable-length arguments.
+	- We can pass any number of arguments separated by commas.
+	- * means variable length and “args” is the name used by convention.
+	- args is tuple of values.
+	- args is just variable name. we can use anything over there.
+
+- **kwargs
+	- **kwargs is a special syntax used in the function definition to pass 
+		variable-length keyworded arguments.
+	- We can pass any number of arguments with keyword --> e.g someFunc(key="null")s
+	- kwargs is used just by convention. You can use any other name.
+	- Keyworded argument means a variable that has a name when passed to a function.
+	- It is actually a dictionary of the variable names and its value.
+
+What are access specifiers used in python?
+- Python does not make use of access specifiers specifically like private, public,
+	protected, etc.
+- But we can use single underscore for protected and double underscore private variables
+- By default, the variables without prefixed underscores are public.
+
+How will you check if a class is a child of another class?
+- We have issubclass() method.
+- Method tells us if any class is a child of another class by returning boolean value.
+- print(issubclass(Child, Parent))    #True
+
+What is Python's parameter passing mechanism?
+- Pass by references
+	- By default, all the parameters are passed "by reference" to the functions.
+	- If we change value of the parameter within a function the change is reflected
+		everywhere.
+
+- Pass by Value
+	- Here we only pass value, No referece.
+	- If value is changed within function then change remain within function scope.
+	- Original value isnt change.
+	- It makes variable immutable that means not changeable.
+
+Difference between Iterator and Generators
+- Basic :-
+	Iterable --> like list, tuple, set --> Data structure that we can iterate through.
+			--> We have __iter__() or __getitem__() method inside this.
+	Iterator --> An iterator is an object that can be used to  traverse through 
+					all the values of iterable.
+			--> It has two methods __iter__() and __next__().
+	Generator --> It is another way of creating iterators.
+			  --> in a simple way it uses the keyword “yield” instead of returning
+
+- Class is used to implement an iterator	Function is used to implement a generator.
+- Local Variables aren’t used here.  All the local variables before the yield function are stored.
+- Iterator uses iter() and next() functions  Generator uses yield keyword
+- Every iterator is not a generator Every generator is an iterator
