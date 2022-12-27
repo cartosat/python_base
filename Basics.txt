@@ -32,7 +32,9 @@ Python
 
 What is PEP 8?
 - PEP 8 stands for Python Enhancement Proposal.
-- It is document that helps us to provide the guidelines on how to write the Python code.
+-  A PEP is an official design document providing information to the Python community,
+	or describing a new feature for Python or its processes.
+- PEP 8 is especially important since it documents the style guidelines for Python Code.
 - It is set of rules that specify how to format Python code for maximum readability.
 
 
@@ -42,13 +44,13 @@ What is PEP 8?
 		- Python compiler verifies synxtax and generate byte code(.pyc file)
 			 if syntax is okay.
 		- Byte code are intermediate instructions. Hence no OS can
-			understand this.	
+			understand this.
 	- Linking
 		-  python interpreter i.e Python Virtual Machine(PVM) converts the
 			python byte code into machine-executable code.
 
-	- Python programs are both compiled as well as interpreted, but the	
-		compilation part is hidden from the programmer. Therefore, we generally say, 
+	- Python programs are both compiled as well as interpreted, but the
+		compilation part is hidden from the programmer. Therefore, we generally say,
 		Python is an interpreted language for the same reason.
 
 Difference between python2 and python3
@@ -87,17 +89,18 @@ What is suit in python :-
 	- Number of statements inside for block can be called suite.
 
 What are different types of function:-
+	reference : https://www.scaler.com/topics/python/types-of-function-arguments-in-python/
 	1) Required Arguments :-
 		- We need to pass argument in same order
 		- here `add(num1, num2=12):` num1 is required argument.
 	2) Keyword Arguments :-
 		- We need to pass argument with keywords.
-		- here `add(num1, num2=12):` num1 anf num2 are keywords.
+		- here `add(3, num2=12)` num2 is keyword and 12 is argument.
 	3) Default Agruments :-
 		- We need to assign default value certain argument.
 		- Non-default arguments are specified before the default arguments.
 		- The default arguments are specified at the end
-		- here `add(num1, num2=12):` num2 is default argument.
+		- here `def add(num1, num2=12):` num2 is default argument.
 	4) Arbitrary/Variable Arguments :-
 		- We can pass any number of argument and access them with for loop inside func.
 		- We use *args and **kwrgs for this functions.
@@ -109,6 +112,10 @@ Tokens in python :-
 		3) Literals.
 		4) Operators.
 
+What is docstring in Python?
+- Documentation string or docstring is a multiline string used to document a specific code segment.
+- The docstring should describe what the function or method does.
+
 Python Keywords :-
 - 1. global keyword is used to declare global variables inside function.
 		- When variables are declared inside function they are local variables
@@ -119,40 +126,54 @@ Python Keywords :-
 		- If we access variable after deleting we get `name not defined error`.
 		- Syntax is del <variable>
 
-- 3.  self is used to represent the instance of the class.
+
+- 3. pass keyword represents a null operation in Python.
+		- It is generally used for the purpose of filling up empty blocks of code
+			which may execute during runtime but has yet to be written.
+
+- self is used to represent the instance of the class.
 		- We can access the attributes and methods of the class with self Keyword.
+		- self is not a keyword in Python.
 
 - Difference between Break, Continue, Pass
-	- a) break - It terminates the loop immediately and the control flows to the 
+	- a) break - It terminates the loop immediately and the control flows to the
 					statement after the body of the loop.
-	- b) continue - It terminates the current iteration of the statement, skips the 
+	- b) continue - It terminates the current iteration of the statement, skips the
 					rest of the code in the current iteration and the control flows
 					to the next iteration of the loop.
-	- c) pass - It  is generally used to fill up empty blocks and is similar to an 
+	- c) pass - It  is generally used to fill up empty blocks and is similar to an
 				empty statement represented by a semi-colon in languages such as Java
 
 Python DataTypes
-- Numeric
+- None
+	- None keyword represents the null values in Python.
+
+- Numeric Type:
 	- Python support three types of numeric data types.
-		- Integer - Python has no restriction on the length of an integer.
+		- Integer
+			- Python has no restriction on the length of an integer.
+			- Stores integer literals including hex, octal and binary numbers as integers.
 		- float
+			- Stores literals containing decimal values and/or exponent signs.
 		- Complex Number
+			- Stores complex numbers in the form (A + Bj) and has attributes: real and imag
 
-- Sequence Type
-	- The concatenation operator (+) and repetition operator (*) works with the Sequences
-		1) String - String is the collection of the characters surrounded by single quotes
-					double quotes, or triple quotes.
-				  - Strings are immutable in python.
-				  - String can completely replaced by other but we cannot partially
-						reassign its content.
-				  - We can format string using `"hi {}".format("Vaibhav")`,
-					 "Hello {variable_name}" and "hi %s"%("Vaibhav)
+- Sequence Type:
+	- The concatenation operator (+) and repetition operator (*) works with the Sequences.
+	- According to Python Docs, there are three basic Sequence Types - lists, tuples,
+		and range objects.
+	-  Sequence types have the `in` and `not in` operators defined for traversing their elements.
 
-		2) List - The lists are ordered collection of elements of different data types.
+		1) List - The lists are ordered collection of elements of different data types.
 				- List elements can be accessed by the assigned index.
-				- 
+				- List is mutable data type.
+				- List stores the data in the sequential form.
+				- Lists can be treated as dynamic arrays.
+				- The most common associated method of lists are:-
+						list(), append(), insert(), extend(),
+						sort(), reverse(), remove(), pop(), clear().
 
-		3) Tuple - A tuple is a read-only data structure as we can't modify the size 
+		2) Tuple - A tuple is a read-only data structure as we can't modify the size
 					and value of the items of a tuple.
 				- Tuple can have duplicate values.
 				- It is immutable and and ordered data structure
@@ -161,20 +182,35 @@ Python DataTypes
 				- We need to add comma after 1st element to create single element tuple
 				 	single_tuple = ("Tuple",)
 				- We cannot delete single element of tuple but we can delete it completely
+				- The most common associated method of tuples are tuple(), count(), index()
+
+		3) Range - Represents an immutable sequence of numbers generated during execution.
+
+		4) String - String is the collection of the characters surrounded by single quotes
+					double quotes, or triple quotes.
+				  - Strings are immutable in python.
+				  - String can completely replaced by other but we cannot partially
+						reassign its content.
+				  - We can format string using `"hi {}".format("Vaibhav")`,
+					 "Hello {variable_name}" and "hi %s"%("Vaibhav)
 
 	Difference between list and tuple
-		- list is mutable whereas tuple is not.
-		- List is better for performing operations like insertion and deletion
+		- list is mutable whereas tuple is immutable.
+		- Lists are represented with square brackets, while tuples are represented with parantheses
+		- List is better for performing operations like insertion and deletion.
 		- Tuple is better for accessing elements.
 		- list consumes more memory, Tuple consumes less memory.
 
 	Difference between list and set
 		- list is order collection of datatype, where is set is unordered.
 		- list can have duplicate, set cannot have duplicate elements.
-		- 
+		-
 
-- Dictionary - Dictionary is an unordered set of a key-value pair of items. 
-			 - While fetching key-value from dict, we may not get data in 
+- Mapping Types:
+	- Mappings objects are mutable.
+	- There is currently only one standard mapping type, the dictionary.
+- Dictionary - Dictionary is an unordered set of a key-value pair of items.
+			 - While fetching key-value from dict, we may not get data in
 				same order which we have inserted.
 			 - We cannot have duplicate key, But we can have duplicate value.
 			 - The keys are immutable in dictionary.
@@ -183,14 +219,21 @@ Python DataTypes
 			 - values from dictionary can be accessed by keys or we have get()
 				method to do so.
 			 -  Items of the dictionary can be deleted by using the del keyword.
-			 - pop() method accepts the key as an argument and remove the 
+			 - pop() method accepts the key as an argument and remove the
 				associated value.
 			 -  popitem() and clear() method for remove elements from the dictionary.
 			 - we cannot store multiple values for the same keys.
+			 - The most common associated method of dictionaries are get(),
+				keys(), values(), items(), update(), pop(), clear()
+
+- Set Types:
+	- Currently, Python has two built-in set types - set and frozenset.
+	- set type is mutable and supports methods like add() and remove().
+	- frozenset type is immutable and can't be modified after creation.
 
 - Set -   Python Set is the unordered collection of the data type.
+		- Set is mutable hence cannot be used as key for dictionary.
 		- It has unique elements.
-		- Set is mutable but its elements are immutable.
 		- It will not have duplicate values.
 		- There is no index attached to the elements of the set.
 		- In set, the order of the elements is undefined;
@@ -200,6 +243,8 @@ Python DataTypes
 		- remove method throws error if element is not found whereas discard will not.
 		- print(Days1|Days2) is union operator or we have union() method.
 		- and & for intersection or intersection() function.
+		- The most common associated method of sets are set(), add(), update(),
+			remove(), pop(), discard(), clear(), intersection(), union(), set_difference()
 
 
 		FrozenSets
@@ -234,12 +279,12 @@ Python Literals
 	- Types of Strings:
 			- Single-line String - terminated in single line.
 			- Multi-line String - text that is written in multiple lines
-				e.g text1='hello\    
-							user' 
+				e.g text1='hello\
+							user'
 				- We use \ to write multi-line string.
 				- we can use triple quotes to write multiline comment.
 
-	- Python contains one special literal i.e., None.   
+	- Python contains one special literal i.e., None.
 
 - in and not in are membership operators in python.
 - is and not is are identity operators.
@@ -264,6 +309,11 @@ Python is and ==
 
 - We can use `in` keyword on any data type with the __contains__() method.
 
+What is slicing in Python?
+- Slicing is used to get desired part of iterator. e.g element from list within index 2-5.
+- Syntax for slicing is [start : stop : step]
+- Default value for start is 0, stop is number of items, step is 1.
+- Slicing can be done on strings, arrays, lists, and tuples.
 
 Anonymous Functions/lambda functions
 	- Functions are called anonymous because we do not declare them.
@@ -280,32 +330,58 @@ Python Magic/Dunder Methods
 	to allocate memory when a new object/instance is created.
 
 Python Iterator
-- It is object that can be used to iterate over iterables like list,tuple,dict.
-- It has two methods __iter__() and __next__()
--  We use __next__() method to print value from generator
+ Reference : https://www.scaler.com/topics/python/iterators-in-python/
+
+ - In python everything is object including variables, functions, lists, tuples, set, etc.
+ - There are some objects which are iterable, which means we can traverse over them and
+    they will return their member value one by one. e.g  List, Tuple, Dictionary, Set, String.
+ - Iterators are implemented using two special methods in Python which are iter() and next().
+    They are collectively called iterator protocol.
+
+ - The iter() method is used to create the iterator over the iterable object.
+ - The next() method returns the next item from the iterator.
+
+How to Make Custom Iterators in Python?
+ - For making our own iterator we have to use two dunder/magic methods provided by Python.
+ - __iter__() should return the iterator object. If required, some initialization can be performed.
+ - __next__() should return the next item in the sequence. On reaching the end it should raise
+    StopIteration.
 
 Python Generators
 - Generators are same as function but insted of return we use yeild in generators.
 - We can have multiple yeild inside function.
 
 Python Decorators
+- Reference : https://www.scaler.com/topics/python/python-decorators/
+- A decorator in Python is a function that takes another function as an argument and
+    extends its behavior without explicitly modifying it.
 - With decorators we can add extra feature in existing function.
 - Decorators allows us to wrap another function to extend behaviour of wrapped function
 	without permanently modifying it.
-- Function are first class objects in python that mean they can be assigned to variables,
-	returned from other functions and passed into functions.
-- Classes are also first class objects.
+- Function are first class objects in python that mean they can be passed as argument.
 - We can pass function as parameter and return function as well.
+- Higher-order function is a function that takes a function as an argument or returns a function.
 
 Shallow and Deep Copy
-- Shallow Copy stores the copy of the original object and points the 
+- Reference : https://www.scaler.com/topics/copy-in-python/
+- Shallow Copy stores the copy of the original object and points the
 	references to the objects.
-- Deep copy stores the copy of the original object and recursively 
+- Deep copy stores the copy of the original object and recursively
 	copies the objects as well.
 - In shallow copy changes made to the new/copied object are reflected
 	in the original object.
-- Deep copy doesn’t reflect changes made to the new/copied object 
+- Deep copy doesn’t reflect changes made to the new/copied object
 	in the original object.
+- e.g :-
+		import copy
+
+		list1 = [1, 2, [3, 4, 5], 6]
+
+		shallow_copy_list = copy.copy(list1)  # shallow copy
+		list2 = list1   # also a shallow copy
+		deep_copy_list = copy.deepcopy(list1)  # deep copy
+
+
 
 
 Object Serialization and Deserialization or Pickling and Unpickling
@@ -319,6 +395,7 @@ Difference between Python Arrays and lists?
 - Arrays
 	- Arrays in python can only contain elements of same data types.
 	-  It is a wrapper around C language arrays and consumes far less memory than lists.
+	- import array a = array.array('i', [1,2,3])
 - Lists
 	- Lists in python can contain elements of different data types.
 	- It has the disadvantage of consuming large memory.
@@ -328,10 +405,25 @@ How is memory managed in Python?
 - Memory management in Python is handled by the Python Memory Manager.
 - The memory allocated by the manager is in form of a private heap space
 	dedicated to Python.
-- All Python objects are stored in this heap and being private, 
-	it is inaccessible to the programmer.
+- All Python objects are stored in this heap and being private,
+	it is inaccessible to the programmer. Though, python does provide
+	some core API functions to work upon the private heap space.
 - Python has an in-built garbage collection to recycle the unused memory
 	for the private heap space.
+
+What are Python namespaces?
+- A namespace in Python ensures that object names in a program are unique and can
+	be used without any conflict.
+- These namespaces are stored as dictionaries with 'name as key' mapped to a
+	corresponding 'object as value'.
+a) Local Namespace includes local names inside a function. the namespace is temporarily
+	created for a function call and gets cleared when the function returns.
+b) Global Namespace includes names from various imported packages/ modules that are being
+	used in the current project. This namespace is created when the package is imported
+	in the script and lasts until the execution of the script.
+c) Built-in Namespace includes built-in functions of core Python and built-in names for
+	various types of exceptions.
+
 
 What is Scope Resolution in Python?
 - Sometimes objects within the same scope have the same name but function differently.
@@ -339,7 +431,7 @@ What is Scope Resolution in Python?
 - Python automatically handles this.
 
 What does *args and **kwargs mean?
-- *args 
+- *args
 	- It is a special syntax used in the function definition to pass
 		variable-length arguments.
 	- We can pass any number of arguments separated by commas.
@@ -348,7 +440,7 @@ What does *args and **kwargs mean?
 	- args is just variable name. we can use anything over there.
 
 - **kwargs
-	- **kwargs is a special syntax used in the function definition to pass 
+	- **kwargs is a special syntax used in the function definition to pass
 		variable-length keyworded arguments.
 	- We can pass any number of arguments with keyword --> e.g someFunc(key="null")s
 	- kwargs is used just by convention. You can use any other name.
@@ -361,10 +453,38 @@ What are access specifiers used in python?
 - But we can use single underscore for protected and double underscore private variables
 - By default, the variables without prefixed underscores are public.
 
+
+What are global, protected and private attributes?
+- Global variables are public variables that are defined in the global scope.
+	To use the variable in the global scope inside a function, we use the global keyword.
+- Protected attributes are attributes defined with an underscore prefixed to their
+	identifier eg. _sara.
+- Private attributes are attributes with double underscore prefixed to their
+	identifier eg. __sara.
+-  They cannot be accessed or modified from the outside directly and will result
+	in an AttributeError.
+
+What is the difference between xrange and range in Python?
+- They both generate a sequence of integers, with the only difference that range() returns
+	a Python list, whereas, xrange() returns an xrange object.
+- xrange() doesn't generate a static list, it creates the value on the go.
+-  This technique is commonly used with an object-type generator and has been termed as "yielding".
+- Creating a static list as in range() can lead to a Memory Error in such conditions, while,
+	xrange() can handle it optimally by using just enough memory for the generator.
+- xrange has been deprecated as of Python 3.x. Now range does exactly the same as what xrange.
+
 How will you check if a class is a child of another class?
 - We have issubclass() method.
 - Method tells us if any class is a child of another class by returning boolean value.
 - print(issubclass(Child, Parent))    #True
+
+Explain the ternary operator in Python.
+- we don’t have ?: in Python but we have
+- [on true] if [expression] else [on false]
+
+Explain help() and dir() functions in Python.
+- The help() function displays the documentation string and help for its argument.
+- The dir() function displays all the members/functions of an object. e.g dir(copy.copy)
 
 What is Python's parameter passing mechanism?
 - Pass by references
@@ -382,7 +502,7 @@ Difference between Iterator and Generators
 - Basic :-
 	Iterable --> like list, tuple, set --> Data structure that we can iterate through.
 			--> We have __iter__() or __getitem__() method inside this.
-	Iterator --> An iterator is an object that can be used to  traverse through 
+	Iterator --> An iterator is an object that can be used to  traverse through
 					all the values of iterable.
 			--> It has two methods __iter__() and __next__().
 	Generator --> It is another way of creating iterators.
@@ -392,3 +512,19 @@ Difference between Iterator and Generators
 - Local Variables aren’t used here.  All the local variables before the yield function are stored.
 - Iterator uses iter() and next() functions  Generator uses yield keyword
 - Every iterator is not a generator Every generator is an iterator
+
+Modules and Packages and library
+- Python packages and Python modules are two mechanisms that allow for modular programming in Python.
+a) Modules:-
+	-  Modules are simply Python files with a .py extension
+		and can have a set of functions, classes, or variables.
+	- They can be imported and initialized once using the import statement.
+	- modules help avoid clashes between global variable names.
+
+b) Packages :-
+	- Packages allow for hierarchial structuring of the module namespace using dot notation.
+	- packages help avoid clashes between module names.
+	- Creating a package is easy since it makes use of the system's inherent file structure.
+		hence we only create folder with desired name and put module file into it.
+c) Library:-
+	- A library is a collection of packages.

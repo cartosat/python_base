@@ -15,6 +15,7 @@ Static Data			  Non Static Data	       Tree					  Graph
 		Linked List		  Stack 		Queue
 
 
+- Reference : https://www.scaler.com/topics/data-structures-in-python/
 
 ** Some basic data types are copied from python.txt file, You can read or ignore
 

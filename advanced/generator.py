@@ -1,4 +1,4 @@
-
+# reference : https://www.scaler.com/topics/python/python-generators/
 def top10():
     n = 1
 
