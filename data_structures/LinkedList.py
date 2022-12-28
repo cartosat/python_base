@@ -30,6 +30,17 @@ class LinkedList:
 
         last.next = newNode
 
+    def reverseLL(self):
+        prev = None
+        current = self.head
+
+        while current:
+            next = current.next
+
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
 
 l1 = LinkedList()
 
