@@ -290,6 +290,30 @@ Python Literals
 - is and not is are identity operators.
 
 
+Filter Map and Reduce
+reference : https://www.codementor.io/@wajihaurooj/map-filter-and-reduce-functions-in-python-x8qz2ru0d
+a) Map:-
+    - Syntax :- map(function, iterables)
+    - This function takes another function and iterable as input.
+    - And applies the function to all elements of iterable.
+    - map function accepts user defined and lambda functions as paramter.
+    - We can provide function accepting 2 paramters. and we will need to provide
+        2 iterables.
+
+b) Filter :-
+    - We can filter out values on certain condition written in function.
+    - e.g If you have iterable of 1...10 and you have function to verify
+        if given no is even, then filter will filterout all even nos.
+    - Syntax :- filter(function, iterables)
+    - filter function accepts user defined and lambda functions as paramter.
+
+c) Reduce :-
+    - Syntax :- reduce(function, iterables)
+    - This function applies given function to iterable and gives single value.
+    - function which we are passing as 1st argument should accept 2 arguments.
+    - reduce function will consecutively perform operation and return single value.
+
+
 Why Python string is immutable?
 - In Python, strings are made immutable so that programmers cannot
 	alter the contents of the object (even by mistake).
