@@ -231,6 +231,21 @@ Collections Module
 		- push(a) –-> Inserts the element ‘a’ at the top of the stack.
 		- pop() –-> Deletes the topmost element of the stack.
 	- All operations are of Time Complexity O(1).
+	- We can implement a stack in Python in the following ways.
+		- List --> we can use append as push and list have built in pop function.
+		- dequeu
+		- LifeQueue
+	- Stack using collections.deque
+		- collections module provides the deque class, which is used to creating Python stacks.
+		- The deque can be preferred over the list because it performs
+			append and pop operation faster than the list.
+		- The time complexity is O(1), where the list takes O(n).
+		- LifeQueue --> The queue module has the LIFO queue, which is the same as the stack.
+                    - We can add elements by put() function and remove them with get().
+
+  	- Let us cleat the confusion; we are using stack with the threading, you should use the
+       Lifoqueue but make sure about its performance for popping and pushing elements.
+  	- But if you are not using threading, use a deque.
 
 7) Queue :- 
 	- Queue is also a linear data structure, that stores items in a 
