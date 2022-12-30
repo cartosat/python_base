@@ -1,0 +1,42 @@
+What is searching in Data Structure
+    - Searching in data structure refers to the process of finding elements stored in the computer memory.
+    - There can be different data structure like an array, linked list, graph, or tree.
+
+What are different searching methods
+    - Searching in the data structure can be done by applying searching algorithms.
+    - These algorithms are classified according to the type of search operation they perform, such as:
+        a) Sequential search
+            - In this, the list or array is traversed sequentially and every element is checked.
+            - For example – Linear Search.
+
+        b) Interval Search
+            - The interval search includes algorithms that are explicitly designed
+                for searching in sorted data structures.
+            -  In terms of efficiency, these algorithms are far better than linear search algorithms.
+            - Example- Logarithmic Search, Binary search.
+
+Searching Algorithms
+
+1) Linear Search Algorithm :-
+    - It is sequential search algorithm which start at one end and goes through each element of a list
+        until the desired element is found, otherwise the search continues till the end of the data set.
+    - It is the easiest searching algorithm.
+    - When data is unsorted, a linear search algorithm is preferred.
+    - Time complexities :-
+            - Best- case complexity = O(1)
+            - Worst- case complexity = O(n)
+            - Average complexity = O(n)
+
+2) Binary Search Algorith :-
+    - It is interval search algorith used on sorted data structre by repeatedly dividing the search
+        interval in half.
+    - This algorithm finds specific items by comparing the middlemost items in the data collection.
+    - When a match occurs, it returns the index of the item.
+    - When the middle item is greater than the item, it searches for a central item of the left sub-array.
+    - if the middle item is smaller than the search item, it explores the middle of the item in the
+        right sub-array.
+    - Binary search needs sorted order of items.
+    - Time complexities :-
+            - Best- case complexity = O(1)
+            - Worst- case complexity = O(n log n)
+            - Average complexity = O(n log n)
