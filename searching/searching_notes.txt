@@ -36,6 +36,18 @@ Searching Algorithms
     - if the middle item is smaller than the search item, it explores the middle of the item in the
         right sub-array.
     - Binary search needs sorted order of items.
+    - There are two methods to implement the binary search algorithm -
+        - Iterative method
+        - Recursive method
+    - Pseudocode:-
+        - Find the middle element by using `mid = low + (high - low) / 2`
+        - Now we will compare value of middle element with target element.
+        - If value matches with target then we return particular index,
+        - If value doesn't matches with target then we perform comparison operation.
+        - If value is greator than target  then we find value in upper sorted array
+        - If value is less than target then we find value in lower sorted array.
+        - So we change `low = mid + 1` and `mid = low + (high - low) / 2`.
+        - This operation is perform until we gets our element.
     - Time complexities :-
             - Best- case complexity = O(1)
             - Worst- case complexity = O(n log n)
