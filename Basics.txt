@@ -144,6 +144,12 @@ Python Keywords :-
 	- c) pass - It  is generally used to fill up empty blocks and is similar to an
 				empty statement represented by a semi-colon in languages such as Java
 
+- Mutable means it can be modified after its creation.
+- Immutable --> assigned value cannot be changed.
+
+Mutable :- List, Set, Dictionary
+Immutable :- integer, string, float, tuple, and bool.
+
 Python DataTypes
 - None
 	- None keyword represents the null values in Python.
@@ -170,19 +176,44 @@ Python DataTypes
 				- List stores the data in the sequential form.
 				- Lists can be treated as dynamic arrays.
 				- The most common associated method of lists are:-
-						list(), append(), insert(), extend(),
-						sort(), reverse(), remove(), pop(), clear().
+						append() --> Used to add/append element/object/iterable at end of list.
+										e.g --> [1,2,[3, 4]] --> if lis.append([3, 4]) used.
+						extend --> add each element of iterable to end of list.
+									e.g --> [1,2,3,4] --. if lis.extend([3,4]) used.
+
+						count() --> Used to get count of particular element in list.
+						insert() --> Inserts a given element at a given index in a list.
+						pop() --> Removes the element at given index and returns value
+									of popped element.
+						remove() --> Removes a first occurence of given value from the List.
+						index() --> returns index of given number.
+						reverse() --> Reverses the List in place.
+						sort() --> Sort a List in ascending, descending, or user-defined order.
+						copy() --> It returns shallow copy of list.
+						clear --> Used to remove all elements from list. And list becomes empty.
 
 		2) Tuple - A tuple is a read-only data structure as we can't modify the size
 					and value of the items of a tuple.
+				- It is immutable and and ordered data structure.
 				- Tuple can have duplicate values.
-				- It is immutable and and ordered data structure
 				- It is similar to list.
 				- We can create tuple without using parentheses.
+				- We can create empty tuple with tuple() function.
 				- We need to add comma after 1st element to create single element tuple
 				 	single_tuple = ("Tuple",)
 				- We cannot delete single element of tuple but we can delete it completely
-				- The most common associated method of tuples are tuple(), count(), index()
+				- The most common associated method of tuples are:-
+						count() --> It returns number of occureneces of particular element.
+						index() --> Returns index of given element.
+								- index(value, start, stop) -> start and stop is range in
+									which function will search given value and returns its
+									index.
+
+						Pythons functions that can be used over tuple are:-
+							sorted(tuple) --> returns a sorted list as an output.
+							min(tuple) --> returns minimum element from tuple.
+							max(tuple) --> return maximum element from tuple.
+							sum(tuple) --> return sum of all integer elements.
 
 		3) Range - Represents an immutable sequence of numbers generated during execution.
 
@@ -210,6 +241,8 @@ Python DataTypes
 	- Mappings objects are mutable.
 	- There is currently only one standard mapping type, the dictionary.
 - Dictionary - Dictionary is an unordered set of a key-value pair of items.
+			 - It is like a map that is used to store data in the form of
+			 	a key:value pair.
 			 - While fetching key-value from dict, we may not get data in
 				same order which we have inserted.
 			 - We cannot have duplicate key, But we can have duplicate value.
@@ -223,8 +256,30 @@ Python DataTypes
 				associated value.
 			 -  popitem() and clear() method for remove elements from the dictionary.
 			 - we cannot store multiple values for the same keys.
-			 - The most common associated method of dictionaries are get(),
-				keys(), values(), items(), update(), pop(), clear()
+			 - The most common associated method of dictionaries are:-
+			 		get(Key) --> It accepts key and return corresponding value.
+					keys() --> Returns a list of all the keys in the dictionary.
+					values() --> Returns a list of all the values in a given dictionary.
+					items() --> Return the list of tuple with all dictionary keys with values.
+								e.g. [(1, 'one'), (2, 'two')]
+					pop(Key) --> Removes the element with the given key and returns its value.
+					popitem() --> Removes the last key-value pair from the dictionary and
+									returns removed key-value pair in tuple.
+					update() --> Updates the dictionary with the elements from another dictionary
+							 --> We can also update dictionary if the key doesn't exists.
+
+					setdefault(Key, value) --> Returns the value of a key if the key is in the
+											dictionary else inserts the key with a value into
+											dictionary.
+
+					fromkeys() --> Creates a dictionary from the given sequence.
+								- first sequence is tuple and second can be list.
+								- we can pass only one sequence, that will become keys
+									and values will be None if we didn't pass 2nd sequence.
+
+					copy() --> Returns a shallow copy of the dictionary.
+					clear() --> Removes all items from the dictionary, and return empty dictionary.
+
 
 - Set Types:
 	- Currently, Python has two built-in set types - set and frozenset.
@@ -267,12 +322,6 @@ Python DataTypes
 Python Data Structures
 - Python provides built-in data structures such as list, tuple,
 	dictionary, and set.
-
-Mutable :- List, Set, Dictionary
-Immutable :- integer, string, float, tuple, and bool.
-
-- mutable means it can be modified after its creation.
-- immutable --> assigned value cannot be changed.
 
 Python Literals
 	- Literals can be defined as data that is given in a variable or constant.
